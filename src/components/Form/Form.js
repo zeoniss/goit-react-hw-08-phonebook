@@ -6,18 +6,18 @@ import ContactOperations from '../../redux/phonebook/phonebook-operations';
 import { Button } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 
-const styles = {
+const s = {
   form: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: 20,
-    width: 400,
+    marginBottom: 40,
+    width: 600,
   },
 
   input: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: 20,
+    marginBottom: 10,
   },
 };
 
@@ -49,9 +49,9 @@ class Form extends Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} style={styles.form}>
+      <form onSubmit={this.handleSubmit} style={s.form}>
         <TextField
-          style={styles.input}
+          style={s.input}
           label="Name"
           variant="filled"
           value={this.state.name}
@@ -64,7 +64,7 @@ class Form extends Component {
         />
 
         <TextField
-          style={styles.input}
+          style={s.input}
           label="Number"
           variant="filled"
           value={this.state.number}

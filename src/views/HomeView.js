@@ -1,6 +1,6 @@
 import React from 'react';
 
-const styles = {
+const s = {
   container: {
     minHeight: 'calc(100vh - 50px)',
     display: 'flex',
@@ -15,9 +15,9 @@ const styles = {
 };
 
 const HomeView = () => (
-  <div style={styles.container}>
-    <h1 style={styles.title}>
-      Home Page <span role="img" aria-label="Иконка приветствия"></span>
+  <div style={s.container}>
+    <h1 style={s.title}>
+      Home Page <span role="img" aria-label="hello"></span>
     </h1>
   </div>
 );

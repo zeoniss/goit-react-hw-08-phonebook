@@ -19,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     textDecoration: 'none',
     padding: 12,
     fontWeight: 700,
-    color: 'white',
+    color: 'black',
   },
 }));
 
@@ -32,8 +32,8 @@ const Navigation = ({ isAuthenticated }) => {
         exact
         className={classes.link}
         activeStyle={{
-          backgroundColor: 'white',
-          color: '#3f51b5',
+          backgroundColor: 'cyan',
+          color: 'purple',
         }}
       >
         Home
@@ -45,8 +45,8 @@ const Navigation = ({ isAuthenticated }) => {
           exact
           className={classes.link}
           activeStyle={{
-            backgroundColor: 'white',
-            color: '#3f51b5',
+            backgroundColor: 'cyan',
+            color: 'purple',
           }}
         >
           Contacts

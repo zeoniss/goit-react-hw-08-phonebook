@@ -4,7 +4,7 @@ import { authOperations } from '../redux/auth';
 import { Button } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 
-const styles = {
+const s = {
   form: {
     width: 320,
   },
@@ -38,15 +38,11 @@ class LoginView extends Component {
 
     return (
       <div>
-        <h1>Please, log in if you already have an account!</h1>
+        <h1>log in if you already have an account</h1>
 
-        <form
-          onSubmit={this.handleSubmit}
-          style={styles.form}
-          autoComplete="off"
-        >
+        <form onSubmit={this.handleSubmit} style={s.form} autoComplete="off">
           <TextField
-            style={styles.label}
+            style={s.label}
             label="Email"
             variant="filled"
             type="email"
@@ -56,7 +52,7 @@ class LoginView extends Component {
           />
 
           <TextField
-            style={styles.label}
+            style={s.label}
             label="Password"
             variant="filled"
             type="password"

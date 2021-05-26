@@ -21,7 +21,7 @@ class ContactsView extends Component {
         <Filter />
         <Contacts />
         {this.props.isLoading && <h2>Loading ... </h2>}
-        {this.props.isError && <h2>Something goes wrong :( </h2>}
+        {this.props.isError && <h2>Something wrong :( </h2>}
       </div>
     );
   }

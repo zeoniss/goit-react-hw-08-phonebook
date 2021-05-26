@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { authSelectors, authOperations } from '../redux/auth';
 
-const styles = {
+const s = {
   container: {
     display: 'flex',
     alignItems: 'center',
@@ -11,7 +11,7 @@ const styles = {
     marginRight: 4,
   },
   name: {
-    fontWeight: 700,
+    fontWeight: 900,
     marginRight: 12,
   },
   button: {
@@ -19,17 +19,17 @@ const styles = {
     textDecoration: 'none',
     padding: 12,
     fontWeight: 700,
-    color: 'white',
-    backgroundColor: 'inherit',
+    color: 'cyan',
+
     border: 'transparent',
   },
 };
 
 const UserMenu = ({ avatar, name, onLogout }) => (
-  <div style={styles.container}>
-    <img src={avatar} alt="" width="32" style={styles.avatar} />
-    <span style={styles.name}>Welcome, {name}</span>
-    <button style={styles.button} type="button" onClick={onLogout}>
+  <div style={s.container}>
+    <img src={avatar} alt="" width="32" style={s.avatar} />
+    <span style={s.name}>Welcome, {name}</span>
+    <button style={s.button} type="button" onClick={onLogout}>
       Logout
     </button>
   </div>

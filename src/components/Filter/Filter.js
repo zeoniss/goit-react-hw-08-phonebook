@@ -4,18 +4,18 @@ import * as selectors from '../../redux/phonebook/phonebook-selectors';
 import PropTypes from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 
-const styles = {
+const s = {
   input: {
     display: 'flex',
     flexDirection: 'column',
-    marginBottom: 20,
-    width: 400,
+    marginBottom: 30,
+    width: 500,
   },
 };
 
 const Filter = ({ value, onChange }) => (
   <TextField
-    style={styles.input}
+    style={s.input}
     label="Find contacts by name"
     variant="filled"
     type="text"

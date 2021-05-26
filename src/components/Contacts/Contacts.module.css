@@ -2,10 +2,10 @@
   display: flex;
   width: 350px;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
+  align-items: left;
+  margin-bottom: 50px;
 }
 
 .number {
-  margin-left: 10px;
+  margin-left: 20px;
 }

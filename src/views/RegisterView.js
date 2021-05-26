@@ -4,7 +4,7 @@ import { authOperations } from '../redux/auth';
 import { Button } from '@material-ui/core';
 import TextField from '@material-ui/core/TextField';
 
-const styles = {
+const s = {
   form: {
     width: 320,
   },
@@ -39,15 +39,11 @@ class RegisterView extends Component {
 
     return (
       <div>
-        <h1>Please, register to create a new account!</h1>
+        <h1>Register your account</h1>
 
-        <form
-          onSubmit={this.handleSubmit}
-          style={styles.form}
-          autoComplete="off"
-        >
+        <form onSubmit={this.handleSubmit} style={s.form} autoComplete="off">
           <TextField
-            style={styles.label}
+            style={s.label}
             label="Name"
             variant="filled"
             type="text"
@@ -57,7 +53,7 @@ class RegisterView extends Component {
           />
 
           <TextField
-            style={styles.label}
+            style={s.label}
             label="Email"
             variant="filled"
             type="email"
@@ -67,7 +63,7 @@ class RegisterView extends Component {
           />
 
           <TextField
-            style={styles.label}
+            style={s.label}
             id="filled-basic"
             label="Password"
             variant="filled"

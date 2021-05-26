@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import styles from './contacts.module.css';
+import s from './contacts.module.css';
 import operations from '../../redux/phonebook/phonebook-operations';
 import * as selectors from '../../redux/phonebook/phonebook-selectors';
 import { Button } from '@material-ui/core';
@@ -11,9 +11,9 @@ const Contacts = ({ contacts, onDeleteContact }) => {
   return (
     <ul>
       {contacts.map(contact => (
-        <li className={styles.contactItem} key={contact.id}>
+        <li className={s.contactItem} key={contact.id}>
           <span>{contact.name}:</span>
-          <span className={styles.number}>
+          <span className={s.number}>
             {phoneFormatter.format(contact.number, 'NNN-NN-NN')}
           </span>
           <Button color="primary" onClick={() => onDeleteContact(contact.id)}>
